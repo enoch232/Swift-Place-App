@@ -44,6 +44,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Pass the selected object to the new view controller.
         let detailController = segue.destination as! DetailController
         detailController.selectedIndex = selectedIndex
+        detailController.placeList = self.placeList
         
     }
 
