@@ -47,6 +47,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         detailController.placeList = self.placeList
         
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            print("Deleted")
+            
+            self.placeList.removeAt(index: indexPath.row)
+            self.tablelist.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
 
 
 }

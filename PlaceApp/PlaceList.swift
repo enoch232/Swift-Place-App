@@ -31,5 +31,7 @@ class PlaceList {
         return places[index]
     }
     
-    
+    func removeAt(index: Int) {
+        places.remove(at: index)
+    }
 }
