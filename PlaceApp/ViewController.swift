@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tablelist: UITableView!
     var placeList = PlaceList()
+    var selectedIndex: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,17 +33,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return(cell)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        let selectedIndex: IndexPath = self.tablelist.indexPath(for: sender as! UITableViewCell)!
-        let detailController = segue.destination as! DetailController
-        detailController.selectedIndex = selectedIndex.row
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedIndex = indexPath.row
+        performSegue(withIdentifier: "detail", sender: self)
         
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "detail", sender: placeList.get(index: indexPath.row))
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        let detailController = segue.destination as! DetailController
+        detailController.selectedIndex = selectedIndex
+        
     }
 
 
