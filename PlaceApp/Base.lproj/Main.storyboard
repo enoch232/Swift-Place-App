@@ -93,6 +93,7 @@
                     <connections>
                         <outlet property="detailLabel" destination="Yfe-UA-Shk" id="FpY-ON-DHH"/>
                         <outlet property="imageView" destination="3wn-JJ-TmM" id="PU9-z4-Wm7"/>
+                        <outlet property="mapView" destination="ihV-qL-Li5" id="FEE-Iv-zRF"/>
                         <outlet property="nameLabel" destination="uZL-dB-zhM" id="Ppb-gZ-PUj"/>
                     </connections>
                 </viewController>
