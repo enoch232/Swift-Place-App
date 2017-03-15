@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B103B271E79B21500C6CFC5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B103B261E79B21500C6CFC5 /* MapKit.framework */; };
 		7B6A72F11E5A782100A6A72F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6A72F01E5A782100A6A72F /* AppDelegate.swift */; };
 		7B6A72F31E5A782100A6A72F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6A72F21E5A782100A6A72F /* ViewController.swift */; };
 		7B6A72F61E5A782100A6A72F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6A72F41E5A782100A6A72F /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B103B261E79B21500C6CFC5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7B6A72ED1E5A782100A6A72F /* PlaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6A72F01E5A782100A6A72F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B6A72F21E5A782100A6A72F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,17 +37,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B103B271E79B21500C6CFC5 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B103B251E79B21500C6CFC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B103B261E79B21500C6CFC5 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B6A72E41E5A782100A6A72F = {
 			isa = PBXGroup;
 			children = (
 				7B6A72EF1E5A782100A6A72F /* PlaceApp */,
 				7B6A72EE1E5A782100A6A72F /* Products */,
+				7B103B251E79B21500C6CFC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -309,6 +321,7 @@
 				7B6A73011E5A782100A6A72F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
