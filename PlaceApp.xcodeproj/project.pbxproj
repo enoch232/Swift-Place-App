@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B103B271E79B21500C6CFC5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B103B261E79B21500C6CFC5 /* MapKit.framework */; };
+		7B103B291E79B97E00C6CFC5 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B103B281E79B97E00C6CFC5 /* NewViewController.swift */; };
 		7B6A72F11E5A782100A6A72F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6A72F01E5A782100A6A72F /* AppDelegate.swift */; };
 		7B6A72F31E5A782100A6A72F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6A72F21E5A782100A6A72F /* ViewController.swift */; };
 		7B6A72F61E5A782100A6A72F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6A72F41E5A782100A6A72F /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		7B103B261E79B21500C6CFC5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7B103B281E79B97E00C6CFC5 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		7B6A72ED1E5A782100A6A72F /* PlaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6A72F01E5A782100A6A72F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B6A72F21E5A782100A6A72F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				7B6A72F01E5A782100A6A72F /* AppDelegate.swift */,
 				7B6A72F21E5A782100A6A72F /* ViewController.swift */,
 				7B6A72F41E5A782100A6A72F /* Main.storyboard */,
+				7B103B281E79B97E00C6CFC5 /* NewViewController.swift */,
 				7B6A73021E5A790A00A6A72F /* Place.swift */,
 				7B6A73041E5A7A2D00A6A72F /* PlaceList.swift */,
 				7B6A72F71E5A782100A6A72F /* Assets.xcassets */,
@@ -160,6 +163,7 @@
 				7B6A73031E5A790A00A6A72F /* Place.swift in Sources */,
 				7B6A72F31E5A782100A6A72F /* ViewController.swift in Sources */,
 				7B6A72F11E5A782100A6A72F /* AppDelegate.swift in Sources */,
+				7B103B291E79B97E00C6CFC5 /* NewViewController.swift in Sources */,
 				7B6A730F1E5A828400A6A72F /* DetailController.swift in Sources */,
 				7B6A73051E5A7A2D00A6A72F /* PlaceList.swift in Sources */,
 			);

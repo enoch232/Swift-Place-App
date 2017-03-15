@@ -31,6 +31,10 @@ class PlaceList {
         return places[index]
     }
     
+    func add(place: Place){
+        places.append(place)
+    }
+    
     func removeAt(index: Int) {
         places.remove(at: index)
     }

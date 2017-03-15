@@ -17,6 +17,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tablelist.reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -44,9 +48,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let detailController = segue.destination as! DetailController
-        detailController.selectedIndex = selectedIndex
-        detailController.placeList = self.placeList
+        if segue.identifier == "detail" {
+            let detailController = segue.destination as! DetailController
+            detailController.selectedIndex = selectedIndex
+            detailController.placeList = self.placeList
+        }else if segue.identifier == "new" {
+            let newPlaceController = segue.destination as! NewViewController
+            newPlaceController.placeList = self.placeList
+        }else{
+            
+        }
+            
+        
         
     }
     
